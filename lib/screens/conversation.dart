@@ -14,9 +14,7 @@ class _ConversationState extends State<Conversation> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Container(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
+        title: Wrap(
             children: [
               Expanded(
                 child: widget.user.imageUrl == ''
@@ -30,7 +28,7 @@ class _ConversationState extends State<Conversation> {
             ],
           ),
         ),
-      ),
+      
       body: Container(),
     );
   }
